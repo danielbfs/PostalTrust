@@ -31,12 +31,13 @@ O projeto deve ser posicionado como:
 
 > Postal Trust é uma infraestrutura blockchain open source para serviços postais e logística, com blockchain permissionada, IA nativa, privacidade by design e federação opcional entre empresas.
 
-Essa tese combina quatro pilares:
+Essa tese combina cinco pilares:
 
 1. blockchain para prova, custódia e execução confiável;
 2. IA para leitura, automação, classificação, previsão e assistência;
 3. API e protocolo aberto para integração e interoperabilidade;
-4. arquitetura self-hosted para facilitar adoção empresarial e aderência à LGPD.
+4. arquitetura self-hosted para facilitar adoção empresarial e aderência à LGPD;
+5. **PostalCoin** como mecanismo de incentivo, liquidação e economia de rede (evolução futura).
 
 ## 3. Problemas que o Projeto Resolve
 
@@ -343,7 +344,8 @@ Elementos:
 - garantia operacional;
 - penalidades;
 - bônus por SLA;
-- conciliação.
+- conciliação;
+- **PostalCoin** como unidade de valor para liquidação por trecho (ver [documento dedicado](POSTAL_COIN.md)).
 
 IA nesse bloco:
 
@@ -410,18 +412,46 @@ IA nesse bloco:
 - relatórios automáticos;
 - suporte contextual.
 
+## 8.10 Bloco J - PostalCoin — Economia da Rede
+
+Responsável pela camada econômica programável do ecossistema.
+
+Elementos:
+
+- emissão via Proof of Infrastructure;
+- escrow em smart contracts;
+- liquidação automática por trecho;
+- oráculos IoT para precificação dinâmica;
+- slashing de performance;
+- score de reputação;
+- crowdshipping incentivado;
+- Layer 2 / Subnet dedicada.
+
+IA nesse bloco:
+
+- precificação dinâmica de rotas;
+- detecção de anomalias de consumo de tokens;
+- previsão de custo logístico;
+- simulação de cenários de crowdshipping;
+- análise de risco de emissão.
+
+> Para a tese completa, consulte o [documento dedicado da PostalCoin](POSTAL_COIN.md).
+
 ## 9. Fluxo Operacional de Alto Nível
 
 1. usuário ou empresa cria a remessa;
 2. sistema gera identidade digital e identificador físico;
 3. documentos são anexados e hasheados;
 4. blockchain registra a criação;
-5. operador coleta o objeto e assume custódia;
-6. cada mudança relevante gera evento assinado;
-7. IA acompanha inconsistências e exceções;
-8. contratos executam repasses por etapa;
-9. entrega é confirmada;
-10. trilha final fica auditável e consultável.
+5. **smart contract retém o valor em PostalCoins (escrow)**;
+6. operador coleta o objeto e assume custódia;
+7. **cada transferência de custódia libera fração de PostalCoins ao operador**;
+8. cada mudança relevante gera evento assinado;
+9. IA acompanha inconsistências e exceções;
+10. contratos executam repasses por etapa;
+11. entrega é confirmada;
+12. **escrow é zerado e liquidação final é registrada**;
+13. trilha final fica auditável e consultável.
 
 ## 10. Modelo de Privacidade e LGPD
 
@@ -595,6 +625,19 @@ O MVP deve ser pequeno, forte e demonstrável.
 - recursos avançados de governança;
 - possível âncora pública opcional.
 
+## Evolução Futura — PostalCoin
+
+- introdução da PostalCoin como unidade de valor do ecossistema;
+- smart contracts de escrow e liquidação por trecho;
+- Proof of Infrastructure para emissão baseada em capacidade auditada;
+- oráculos IoT para precificação dinâmica;
+- slashing de performance e score de reputação;
+- crowdshipping incentivado por tokens;
+- marketplace de capacidade logística;
+- Layer 2 / Subnet dedicada.
+
+> Para a tese completa, consulte o [documento dedicado da PostalCoin](POSTAL_COIN.md).
+
 ## 15. Estrutura Inicial do Repositório
 
 Sugestão de estrutura:
@@ -647,7 +690,8 @@ Sugestão de estrutura:
 6. a plataforma deve ser API-first;
 7. a LGPD deve ser tratada como requisito estrutural;
 8. o MVP deve priorizar valor operacional e auditabilidade;
-9. token especulativo ou rede pública irrestrita não são prioridade inicial.
+9. token especulativo ou rede pública irrestrita não são prioridade inicial;
+10. a PostalCoin é um token utilitário (RWA), não especulativo, previsto como evolução futura do ecossistema.
 
 ## 17. Riscos Principais
 

@@ -161,7 +161,8 @@ Responsible for:
 - operational guarantees;
 - reconciliation;
 - bonuses and penalties;
-- contractual settlement.
+- contractual settlement;
+- **PostalCoin** as the native unit of value for per-leg pricing and settlement (see [dedicated document](POSTAL_COIN_EN.md)).
 
 ### 6.5 AI layer
 
@@ -231,7 +232,8 @@ An instance may operate with nodes distributed across:
 - document hashes;
 - contractual references;
 - workflow states;
-- settlement milestones.
+- settlement milestones;
+- PostalCoin balances, transactions, and events (via Layer 2).
 
 ### 8.2 Recommended off-chain
 
@@ -280,6 +282,22 @@ From the start, the project should include:
 ### 9.3 Core rule
 
 > AI interprets. Blockchain proves. Governance decides.
+
+### 9.4 PostalCoin — The Programmable Stamp
+
+The Postal Trust ecosystem envisions the future introduction of **PostalCoin**, a Utility Token backed by operational logistics capacity. PostalCoin functions as a **Real World Asset (RWA)** — the evolution of the postal stamp into a programmable stamp.
+
+Core principles:
+
+- issuance based on **Proof of Infrastructure**: tokens issued based on the audited logistics capacity of federated operators;
+- **automatic per-leg settlement**: each stage of the chain consumes and releases tokens upon custody confirmation;
+- **smart incentives**: game theory to optimize inefficient routes and incentivize last-mile crowdshipping;
+- **performance slashing**: automatic penalties for operators who fail on deadlines or integrity;
+- **dedicated Layer 2**: high-throughput infrastructure for financial transactions with near-zero fees.
+
+PostalCoin is not a speculative cryptocurrency. It is the operational unit of value for the protocol, designed as a future evolution after the consolidation of basic operational functionalities.
+
+> For the complete thesis, see the [dedicated PostalCoin document](POSTAL_COIN_EN.md).
 
 ## 10. Privacy, security, and compliance
 
@@ -447,6 +465,15 @@ To prove that the platform can unify:
 - broader federated governance;
 - optional public anchoring.
 
+### Future evolution — PostalCoin
+
+- introduction of PostalCoin as the ecosystem's unit of value;
+- escrow and per-leg settlement smart contracts;
+- Proof of Infrastructure for issuance;
+- IoT oracles for dynamic pricing;
+- logistics capacity marketplace;
+- token-incentivized crowdshipping.
+
 ## 16. Open source and community
 
 This project is born with an open vocation. That means the community can contribute not only code, but also:
@@ -523,4 +550,5 @@ If executed well, the project can serve as a foundation for companies, integrato
 3. choose the permissioned blockchain technology stack;
 4. define the initial event and custody model;
 5. start the repository structure with documentation, data contracts, and prototypes;
-6. open issues for architecture, security, AI, and protocol contributions.
+6. open issues for architecture, security, AI, and protocol contributions;
+7. review the [PostalCoin thesis](POSTAL_COIN_EN.md) as a future ecosystem evolution.

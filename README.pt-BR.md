@@ -18,6 +18,7 @@ O projeto combina:
 - [White Paper](WHITEPAPER.md)
 - [Blueprint do Projeto](PROJECT_BLUEPRINT.md)
 - [Obsidian Brain](OBSIDIAN_BRAIN.md)
+- [Tese da PostalCoin](POSTAL_COIN.md)
 - [Guia de Contribuição](CONTRIBUTING.md)
 
 ## Objetivo Atual

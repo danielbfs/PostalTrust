@@ -15,10 +15,11 @@ The project combines:
 
 ## Documentation
 
-- [White Paper](D:/OneDrive/Documentos/New%20project/WHITEPAPER_EN.md)
-- [Project Blueprint](D:/OneDrive/Documentos/New%20project/PROJECT_BLUEPRINT_EN.md)
-- [Obsidian Brain](D:/OneDrive/Documentos/New%20project/OBSIDIAN_BRAIN_EN.md)
-- [Contribution Guide](D:/OneDrive/Documentos/New%20project/CONTRIBUTING.md)
+- [White Paper](WHITEPAPER_EN.md)
+- [Project Blueprint](PROJECT_BLUEPRINT_EN.md)
+- [Obsidian Brain](OBSIDIAN_BRAIN_EN.md)
+- [PostalCoin Thesis](POSTAL_COIN_EN.md)
+- [Contribution Guide](CONTRIBUTING.md)
 
 ## Current Goal
 
@@ -26,4 +27,4 @@ The current phase of the repository is to publish the vision, architecture, and 
 
 ## Language
 
-- [Portuguese version](D:/OneDrive/Documentos/New%20project/README.pt-BR.md)
+- [Portuguese version](README.pt-BR.md)

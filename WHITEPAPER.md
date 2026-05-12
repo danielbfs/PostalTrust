@@ -161,7 +161,8 @@ Responsável por:
 - garantias operacionais;
 - conciliação;
 - bônus e penalidades;
-- liquidação contratual.
+- liquidação contratual;
+- **PostalCoin** como unidade de valor nativa para precificação e liquidação por trecho (ver [documento dedicado](POSTAL_COIN.md)).
 
 ### 6.5 Camada de IA
 
@@ -231,7 +232,8 @@ Uma instância pode operar com nós distribuídos entre:
 - hashes de documentos;
 - referências contratuais;
 - estados de workflow;
-- marcos de liquidação.
+- marcos de liquidação;
+- saldos, transações e eventos da PostalCoin (via Layer 2).
 
 ### 8.2 Recomendado off-chain
 
@@ -280,6 +282,22 @@ O projeto deve adotar desde o início:
 ### 9.3 Regra central
 
 > A IA interpreta. A blockchain prova. A governança decide.
+
+### 9.4 PostalCoin — O Selo Programável
+
+O ecossistema Postal Trust prevê a introdução futura da **PostalCoin**, um ativo digital de utilidade (Utility Token) lastreado na capacidade operacional logística. A PostalCoin funciona como um **Real World Asset (RWA)** — a evolução do selo postal para um selo programável.
+
+Princípios fundamentais:
+
+- emissão baseada em **Proof of Infrastructure**: tokens emitidos com base na capacidade logística auditada de operadores federados;
+- **liquidação automática por trecho**: cada etapa da cadeia consome e libera tokens conforme confirmação de custódia;
+- **incentivos inteligentes**: teoria dos jogos para otimizar rotas ineficientes e incentivar crowdshipping na última milha;
+- **slashing de performance**: penalidades automáticas para operadores que falham em prazos ou integridade;
+- **Layer 2 dedicada**: infraestrutura de alto throughput para transações financeiras com taxas próximas de zero.
+
+A PostalCoin não é uma criptomoeda especulativa. É a unidade de valor operacional do protocolo, projetada como evolução futura após a consolidação das funcionalidades operacionais básicas.
+
+> Para a tese completa, consulte o [documento dedicado da PostalCoin](POSTAL_COIN.md).
 
 ## 10. Privacidade, segurança e conformidade
 
@@ -447,6 +465,15 @@ Provar que a plataforma consegue unir:
 - governança federada mais ampla;
 - possível ancoragem pública opcional.
 
+### Evolução futura — PostalCoin
+
+- introdução da PostalCoin como unidade de valor do ecossistema;
+- smart contracts de escrow e liquidação por trecho;
+- Proof of Infrastructure para emissão;
+- oráculos IoT para precificação dinâmica;
+- marketplace de capacidade logística;
+- crowdshipping incentivado por tokens.
+
 ## 16. Open source e comunidade
 
 Este projeto nasce com vocação aberta. Isso significa que a comunidade pode contribuir não apenas com código, mas também com:
@@ -523,4 +550,5 @@ Se bem executado, o projeto pode servir como base para empresas, integradores, o
 3. escolher a stack técnica da blockchain permissionada;
 4. definir o modelo inicial de eventos e custódia;
 5. iniciar a estrutura do repositório com documentação, contratos de dados e protótipos;
-6. abrir issues para contribuições de arquitetura, segurança, IA e protocolo.
+6. abrir issues para contribuições de arquitetura, segurança, IA e protocolo;
+7. revisar a [tese da PostalCoin](POSTAL_COIN.md) como evolução futura do ecossistema.

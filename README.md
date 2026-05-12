@@ -16,6 +16,7 @@ Infraestrutura blockchain open source para serviços postais e logística.
 - [White Paper](WHITEPAPER_EN.md)
 - [Project Blueprint](PROJECT_BLUEPRINT_EN.md)
 - [Obsidian Brain](OBSIDIAN_BRAIN_EN.md)
+- [PostalCoin Thesis](POSTAL_COIN_EN.md)
 - [Contributing Guide](CONTRIBUTING.md)
 
 ### Português
@@ -23,6 +24,7 @@ Infraestrutura blockchain open source para serviços postais e logística.
 - [White Paper](WHITEPAPER.md)
 - [Project Blueprint](PROJECT_BLUEPRINT.md)
 - [Obsidian Brain](OBSIDIAN_BRAIN.md)
+- [Tese da PostalCoin](POSTAL_COIN.md)
 - [Guia de Contribuição](CONTRIBUTING.md)
 
 ## Project Positioning

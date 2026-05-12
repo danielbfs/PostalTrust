@@ -33,6 +33,16 @@ mindmap
       Documentos
       Liquidação
       Compliance
+    PostalCoin
+      RWA Selo Programável
+      Proof of Infrastructure
+      Escrow por remessa
+      Liquidação por trecho
+      Slashing de performance
+      Score de reputação
+      Crowdshipping
+      Oráculos IoT
+      Layer 2 dedicada
     Integração
       API REST ou GraphQL
       Webhooks
@@ -57,6 +67,7 @@ mindmap
       Financeiro
       Federação
       Ecossistema
+      PostalCoin futura
 ```
 
 ## Mapa de Comunicação Entre Blocos
@@ -82,9 +93,11 @@ flowchart TD
 
     D --> F[Financeiro e Liquidação]
     D --> I
+    D --> M[PostalCoin]
 
     F --> I
     F --> G
+    F --> M
 
     G --> I
 
@@ -104,6 +117,7 @@ flowchart TD
     J --> G
     J --> H
     J --> I
+    J --> M
 
     K[Privacidade e LGPD] --> A
     K --> B
@@ -117,6 +131,12 @@ flowchart TD
     L --> C
     L --> D
     L --> F
+    L --> M
+
+    M --> D
+    M --> F
+    M --> I
+    M --> L
 ```
 
 ## Fluxo Operacional Resumido
@@ -131,6 +151,7 @@ sequenceDiagram
     participant BC as Blockchain
     participant CU as Custódia
     participant SC as Smart Contracts
+    participant PCN as PostalCoin Escrow
     participant FI as Financeiro
 
     U->>API: Criar remessa
@@ -139,14 +160,18 @@ sequenceDiagram
     DOC->>AI: Extrair e validar dados
     AI-->>DOC: Campos, alertas e classificação
     ID->>BC: Registrar criação
+    U->>PCN: Reter valor em PostalCoins (escrow)
     API->>CU: Registrar coleta e custódia
     CU->>BC: Registrar evento assinado
+    PCN-->>CU: Liberar fração ao operador de coleta
     BC->>SC: Executar regras de negócio
     SC->>FI: Atualizar split ou garantia
     AI->>API: Resumir status e detectar exceções
     CU->>BC: Registrar entrega
+    PCN-->>CU: Liberar fração final ao entregador
     BC->>SC: Encerrar fluxo contratual
     SC->>FI: Liquidar pagamento final
+    PCN->>FI: Escrow zerado
 ```
 
 ## Leitura Rápida dos Blocos
@@ -162,3 +187,4 @@ sequenceDiagram
 - `Camada de IA Nativa`: apoia todos os blocos com leitura, análise e automação.
 - `Privacidade e LGPD`: garante minimização, pseudonimização e controle de acesso.
 - `Federação entre Instâncias`: permite interoperabilidade entre empresas.
+- `PostalCoin`: camada econômica programável — o Selo Programável (RWA). Emissão via Proof of Infrastructure, liquidação automática por trecho, crowdshipping incentivado, slashing de performance e score de reputação. Evolução futura do ecossistema.

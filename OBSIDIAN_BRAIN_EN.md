@@ -1,6 +1,6 @@
-# Obsidian Brain
+# Project Obsidian Brain
 
-This file was designed for visualization in Obsidian using Mermaid. It shows the main system blocks and how they communicate.
+This file is designed for visualization in Obsidian with Mermaid. It shows the main system blocks and how they communicate.
 
 ## General Mindmap
 
@@ -22,7 +22,7 @@ mindmap
     AI
       Document OCR
       Event classification
-      Shipment summaries
+      Shipment summarization
       Fraud detection
       Operational copilot
       Automatic reports
@@ -33,6 +33,16 @@ mindmap
       Documents
       Settlement
       Compliance
+    PostalCoin
+      RWA Programmable Stamp
+      Proof of Infrastructure
+      Per-shipment escrow
+      Per-leg settlement
+      Performance slashing
+      Reputation score
+      Crowdshipping
+      IoT oracles
+      Dedicated Layer 2
     Integration
       REST or GraphQL API
       Webhooks
@@ -40,7 +50,7 @@ mindmap
       Federated protocol
       ERP TMS WMS
     Privacy
-      Data protection
+      GDPR LGPD
       Pseudonymization
       Off-chain data
       On-chain hashes
@@ -54,12 +64,13 @@ mindmap
     Roadmap
       MVP
       Custody
-      Finance
+      Financial
       Federation
       Ecosystem
+      Future PostalCoin
 ```
 
-## Communication Map Between Blocks
+## Block Communication Map
 
 ```mermaid
 flowchart TD
@@ -82,9 +93,11 @@ flowchart TD
 
     D --> F[Finance and Settlement]
     D --> I
+    D --> M[PostalCoin]
 
     F --> I
     F --> G
+    F --> M
 
     G --> I
 
@@ -104,8 +117,9 @@ flowchart TD
     J --> G
     J --> H
     J --> I
+    J --> M
 
-    K[Privacy and Compliance] --> A
+    K[Privacy and GDPR] --> A
     K --> B
     K --> C
     K --> E
@@ -117,9 +131,15 @@ flowchart TD
     L --> C
     L --> D
     L --> F
+    L --> M
+
+    M --> D
+    M --> F
+    M --> I
+    M --> L
 ```
 
-## High-Level Operational Flow
+## Summarized Operational Flow
 
 ```mermaid
 sequenceDiagram
@@ -131,34 +151,40 @@ sequenceDiagram
     participant BC as Blockchain
     participant CU as Custody
     participant SC as Smart Contracts
+    participant PCN as PostalCoin Escrow
     participant FI as Finance
 
     U->>API: Create shipment
     API->>ID: Generate digital identity
-    U->>DOC: Send documents
+    U->>DOC: Upload documents
     DOC->>AI: Extract and validate data
     AI-->>DOC: Fields, alerts, and classification
     ID->>BC: Register creation
+    U->>PCN: Hold PostalCoin value (escrow)
     API->>CU: Register pickup and custody
     CU->>BC: Register signed event
+    PCN-->>CU: Release fraction to pickup operator
     BC->>SC: Execute business rules
     SC->>FI: Update split or guarantee
     AI->>API: Summarize status and detect exceptions
     CU->>BC: Register delivery
+    PCN-->>CU: Release final fraction to deliverer
     BC->>SC: Close contractual flow
     SC->>FI: Settle final payment
+    PCN->>FI: Escrow zeroed
 ```
 
-## Quick Reading of the Blocks
+## Quick Block Reference
 
-- `Shipment Identity`: creates the digital asset and physical identifier.
-- `Event Blockchain`: stores the main immutable trail.
+- `Shipment Identity`: creates the digital asset and readable physical identifier.
+- `Event Blockchain`: stores the immutable main trail.
 - `Custody and Proofs`: records responsibility at each stage.
 - `Smart Contracts`: executes business rules and automation.
 - `Documents and Evidence`: stores off-chain attachments and on-chain hashes.
-- `Finance and Settlement`: manages splits, escrow, and payouts.
-- `Risk, Fraud, and Compliance`: monitors integrity and policy adherence.
-- `API and Open Protocol`: connects internal systems and external instances.
+- `Finance and Settlement`: manages splits, escrow, and payments.
+- `Risk, Fraud and Compliance`: monitors integrity and policies.
+- `API and Open Protocol`: connects internal systems and other instances.
 - `Native AI Layer`: supports all blocks with reading, analysis, and automation.
-- `Privacy and Compliance`: ensures minimization, pseudonymization, and access control.
+- `Privacy and GDPR`: ensures minimization, pseudonymization, and access control.
 - `Federation Between Instances`: enables interoperability between companies.
+- `PostalCoin`: programmable economic layer — the Programmable Stamp (RWA). Issuance via Proof of Infrastructure, automatic per-leg settlement, incentivized crowdshipping, performance slashing, and reputation scoring. Future ecosystem evolution.

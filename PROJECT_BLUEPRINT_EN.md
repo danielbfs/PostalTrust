@@ -31,12 +31,13 @@ The project should be positioned as:
 
 > Postal Trust is an open source blockchain infrastructure for postal services and logistics, with permissioned blockchain, native AI, privacy by design, and optional federation between companies.
 
-This thesis combines four pillars:
+This thesis combines five pillars:
 
 1. blockchain for proof, custody, and trusted execution;
 2. AI for reading, automation, classification, prediction, and assistance;
 3. API and open protocol for integration and interoperability;
-4. self-hosted architecture to ease enterprise adoption and fit privacy requirements.
+4. self-hosted architecture to ease enterprise adoption and fit privacy requirements;
+5. **PostalCoin** as an incentive, settlement, and network economics mechanism (future evolution).
 
 ## 3. Problems the project solves
 
@@ -342,7 +343,8 @@ Elements:
 - operational guarantee;
 - penalties;
 - SLA bonuses;
-- reconciliation.
+- reconciliation;
+- **PostalCoin** as the unit of value for per-leg settlement (see [dedicated document](POSTAL_COIN_EN.md)).
 
 AI in this block:
 
@@ -409,18 +411,46 @@ AI in this block:
 - automatic reporting;
 - contextual support.
 
+## 8.10 Block J - PostalCoin — Network Economics
+
+Responsible for the ecosystem's programmable economic layer.
+
+Elements:
+
+- issuance via Proof of Infrastructure;
+- smart contract escrow;
+- automatic per-leg settlement;
+- IoT oracles for dynamic pricing;
+- performance slashing;
+- reputation score;
+- incentivized crowdshipping;
+- dedicated Layer 2 / Subnet.
+
+AI in this block:
+
+- dynamic route pricing;
+- token consumption anomaly detection;
+- logistics cost forecasting;
+- crowdshipping scenario simulation;
+- issuance risk analysis.
+
+> For the complete thesis, see the [dedicated PostalCoin document](POSTAL_COIN_EN.md).
+
 ## 9. High-level operational flow
 
 1. a user or company creates a shipment;
 2. the system generates a digital identity and physical identifier;
 3. documents are attached and hashed;
 4. blockchain registers the creation;
-5. an operator picks up the object and assumes custody;
-6. every relevant handoff creates a signed event;
-7. AI monitors inconsistencies and exceptions;
-8. contracts execute per-stage settlements;
-9. delivery is confirmed;
-10. the final trail remains auditable and queryable.
+5. **smart contract holds the PostalCoin value (escrow)**;
+6. an operator picks up the object and assumes custody;
+7. **each custody transfer releases a PostalCoin fraction to the operator**;
+8. every relevant handoff creates a signed event;
+9. AI monitors inconsistencies and exceptions;
+10. contracts execute per-stage settlements;
+11. delivery is confirmed;
+12. **escrow is zeroed and final settlement is recorded**;
+13. the final trail remains auditable and queryable.
 
 ## 10. Privacy model
 
@@ -594,6 +624,19 @@ The MVP should be compact, strong, and demonstrable.
 - advanced governance resources;
 - optional public anchoring.
 
+## Future Evolution — PostalCoin
+
+- introduction of PostalCoin as the ecosystem's unit of value;
+- escrow and per-leg settlement smart contracts;
+- Proof of Infrastructure for capacity-based issuance;
+- IoT oracles for dynamic pricing;
+- performance slashing and reputation scoring;
+- token-incentivized crowdshipping;
+- logistics capacity marketplace;
+- dedicated Layer 2 / Subnet.
+
+> For the complete thesis, see the [dedicated PostalCoin document](POSTAL_COIN_EN.md).
+
 ## 15. Suggested initial repository structure
 
 ```text
@@ -644,7 +687,8 @@ The MVP should be compact, strong, and demonstrable.
 6. the platform should be API-first;
 7. privacy and compliance should be structural requirements;
 8. the MVP should prioritize operational value and auditability;
-9. a speculative token or unrestricted public network is not an initial priority.
+9. a speculative token or unrestricted public network is not an initial priority;
+10. PostalCoin is a utility token (RWA), not speculative, planned as a future ecosystem evolution.
 
 ## 17. Main risks
 
