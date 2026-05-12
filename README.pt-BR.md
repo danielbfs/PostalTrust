@@ -1,29 +1,29 @@
 # Postal Trust
 
-Infraestrutura blockchain open source para servicos postais e logistica.
+Infraestrutura blockchain open source para serviços postais e logística.
 
-## Visao Geral
+## Visão Geral
 
-`Postal Trust` e uma plataforma open source, self-hosted e federada criada para levar rastreabilidade auditavel, cadeia de custodia, interoperabilidade e IA nativa para fluxos postais e logisticos.
+`Postal Trust` é uma plataforma open source, self-hosted e federada criada para levar rastreabilidade auditável, cadeia de custódia, interoperabilidade e IA nativa para fluxos postais e logísticos.
 
 O projeto combina:
 
-- blockchain permissionada para prova, custodia e auditabilidade;
-- IA nativa para leitura documental, deteccao de anomalias, relatorios e assistencia operacional;
+- blockchain permissionada para prova, custódia e auditabilidade;
+- IA nativa para leitura documental, detecção de anomalias, relatórios e assistência operacional;
 - APIs abertas e desenho de protocolo para interoperabilidade;
-- principios de privacidade by design para aderencia empresarial e regulatoria.
+- princípios de privacidade by design para aderência empresarial e regulatória.
 
-## Documentacao
+## Documentação
 
-- [White Paper](D:/OneDrive/Documentos/New%20project/WHITEPAPER.md)
-- [Blueprint do Projeto](D:/OneDrive/Documentos/New%20project/PROJECT_BLUEPRINT.md)
-- [Obsidian Brain](D:/OneDrive/Documentos/New%20project/OBSIDIAN_BRAIN.md)
-- [Guia de Contribuicao](D:/OneDrive/Documentos/New%20project/CONTRIBUTING.md)
+- [White Paper](WHITEPAPER.md)
+- [Blueprint do Projeto](PROJECT_BLUEPRINT.md)
+- [Obsidian Brain](OBSIDIAN_BRAIN.md)
+- [Guia de Contribuição](CONTRIBUTING.md)
 
 ## Objetivo Atual
 
-A fase atual do repositorio e publicar a visao, a arquitetura e a direcao do protocolo de forma que a comunidade possa revisar, criticar e melhorar antes da implementacao ganhar escala.
+A fase atual do repositório é publicar a visão, a arquitetura e a direção do protocolo de forma que a comunidade possa revisar, criticar e melhorar antes da implementação ganhar escala.
 
 ## Language
 
-- [English version](D:/OneDrive/Documentos/New%20project/README.en.md)
+- [English version](README.en.md)

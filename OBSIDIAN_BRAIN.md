@@ -1,13 +1,13 @@
 # Obsidian Brain do Projeto
 
-Este arquivo foi pensado para visualizacao no Obsidian com Mermaid. Ele mostra os principais blocos do sistema e como eles se comunicam.
+Este arquivo foi pensado para visualização no Obsidian com Mermaid. Ele mostra os principais blocos do sistema e como eles se comunicam.
 
 ## Mindmap Geral
 
 ```mermaid
 mindmap
   root((Postal Trust))
-    Visao
+    Visão
       Open source
       Self-hosted
       Federada
@@ -15,25 +15,25 @@ mindmap
       AI-native
     Blockchain
       Rede permissionada
-      Nos validadores
+      Nós validadores
       Consenso BFT ou PoA
-      Ledger imutavel
+      Ledger imutável
       Smart contracts
     IA
       OCR documental
-      Classificacao de eventos
+      Classificação de eventos
       Resumo de remessas
-      Deteccao de fraude
+      Detecção de fraude
       Copiloto operacional
-      Relatorios automaticos
-    Dominio
+      Relatórios automáticos
+    Domínio
       Remessa
-      Custodia
+      Custódia
       Eventos
       Documentos
-      Liquidacao
+      Liquidação
       Compliance
-    Integracao
+    Integração
       API REST ou GraphQL
       Webhooks
       SDKs
@@ -41,11 +41,11 @@ mindmap
       ERP TMS WMS
     Privacidade
       LGPD
-      Pseudonimizacao
+      Pseudonimização
       Dados off-chain
       Hashes on-chain
       Controle de acesso
-    Aplicacoes
+    Aplicações
       Painel admin
       Portal auditoria
       App operador
@@ -53,24 +53,24 @@ mindmap
       Chat IA
     Roadmap
       MVP
-      Custodia
+      Custódia
       Financeiro
-      Federacao
+      Federação
       Ecossistema
 ```
 
-## Mapa de Comunicacao Entre Blocos
+## Mapa de Comunicação Entre Blocos
 
 ```mermaid
 flowchart TD
     A[Identidade da Remessa] --> B[Blockchain de Eventos]
-    A --> C[Custodia e Provas]
-    A --> E[Documentos e Evidencias]
+    A --> C[Custódia e Provas]
+    A --> E[Documentos e Evidências]
 
     B --> C
     B --> D[Smart Contracts]
     B --> G[Risco Fraude e Compliance]
-    B --> I[Aplicacoes]
+    B --> I[Aplicações]
 
     C --> D
     C --> G
@@ -80,7 +80,7 @@ flowchart TD
     E --> G
     E --> I
 
-    D --> F[Financeiro e Liquidacao]
+    D --> F[Financeiro e Liquidação]
     D --> I
 
     F --> I
@@ -112,7 +112,7 @@ flowchart TD
     K --> H
     K --> I
 
-    L[Federacao entre Instancias] --> H
+    L[Federação entre Instâncias] --> H
     L --> B
     L --> C
     L --> D
@@ -123,13 +123,13 @@ flowchart TD
 
 ```mermaid
 sequenceDiagram
-    participant U as Usuario ou Empresa
+    participant U as Usuário ou Empresa
     participant API as API Gateway
     participant ID as Identidade da Remessa
     participant DOC as Documentos
     participant AI as Camada de IA
     participant BC as Blockchain
-    participant CU as Custodia
+    participant CU as Custódia
     participant SC as Smart Contracts
     participant FI as Financeiro
 
@@ -137,28 +137,28 @@ sequenceDiagram
     API->>ID: Gerar identidade digital
     U->>DOC: Enviar documentos
     DOC->>AI: Extrair e validar dados
-    AI-->>DOC: Campos, alertas e classificacao
-    ID->>BC: Registrar criacao
-    API->>CU: Registrar coleta e custodia
+    AI-->>DOC: Campos, alertas e classificação
+    ID->>BC: Registrar criação
+    API->>CU: Registrar coleta e custódia
     CU->>BC: Registrar evento assinado
-    BC->>SC: Executar regras de negocio
+    BC->>SC: Executar regras de negócio
     SC->>FI: Atualizar split ou garantia
-    AI->>API: Resumir status e detectar excecoes
+    AI->>API: Resumir status e detectar exceções
     CU->>BC: Registrar entrega
     BC->>SC: Encerrar fluxo contratual
     SC->>FI: Liquidar pagamento final
 ```
 
-## Leitura Rapida dos Blocos
+## Leitura Rápida dos Blocos
 
-- `Identidade da Remessa`: cria o ativo digital e o identificador fisico.
-- `Blockchain de Eventos`: guarda a trilha imutavel principal.
-- `Custodia e Provas`: registra a responsabilidade por etapa.
-- `Smart Contracts`: executa regras de negocio e automacao.
-- `Documentos e Evidencias`: guarda anexos off-chain e hashes on-chain.
-- `Financeiro e Liquidacao`: gerencia split, escrow e repasses.
-- `Risco, Fraude e Compliance`: monitora integridade e politicas.
-- `API e Protocolo Aberto`: conecta sistemas internos e outras instancias.
-- `Camada de IA Nativa`: apoia todos os blocos com leitura, analise e automacao.
-- `Privacidade e LGPD`: garante minimizacao, pseudonimizacao e controle de acesso.
-- `Federacao entre Instancias`: permite interoperabilidade entre empresas.
+- `Identidade da Remessa`: cria o ativo digital e o identificador físico.
+- `Blockchain de Eventos`: guarda a trilha imutável principal.
+- `Custódia e Provas`: registra a responsabilidade por etapa.
+- `Smart Contracts`: executa regras de negócio e automação.
+- `Documentos e Evidências`: guarda anexos off-chain e hashes on-chain.
+- `Financeiro e Liquidação`: gerencia split, escrow e repasses.
+- `Risco, Fraude e Compliance`: monitora integridade e políticas.
+- `API e Protocolo Aberto`: conecta sistemas internos e outras instâncias.
+- `Camada de IA Nativa`: apoia todos os blocos com leitura, análise e automação.
+- `Privacidade e LGPD`: garante minimização, pseudonimização e controle de acesso.
+- `Federação entre Instâncias`: permite interoperabilidade entre empresas.

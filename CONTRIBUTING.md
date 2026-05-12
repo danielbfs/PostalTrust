@@ -18,17 +18,17 @@ At this stage, the project is especially looking for contributions in:
 - interoperability and protocol design;
 - developer experience and repository structure.
 
-Neste momento, o projeto esta especialmente buscando contribuicoes em:
+Neste momento, o projeto está especialmente buscando contribuições em:
 
-- revisao do white paper;
-- critica da arquitetura blockchain;
+- revisão do white paper;
+- crítica da arquitetura blockchain;
 - desenho de consenso permissionado;
-- modelagem de eventos logisticos;
-- semantica de cadeia de custodia;
-- revisao de privacidade e compliance;
+- modelagem de eventos logísticos;
+- semântica de cadeia de custódia;
+- revisão de privacidade e compliance;
 - desenho de fluxos de IA e guardrails;
 - interoperabilidade e desenho de protocolo;
-- experiencia de desenvolvimento e estrutura do repositorio.
+- experiência de desenvolvimento e estrutura do repositório.
 
 ## How to contribute
 
@@ -38,11 +38,11 @@ Neste momento, o projeto esta especialmente buscando contribuicoes em:
 4. Prefer additions that improve clarity, auditability, privacy, or interoperability.
 5. If a proposal adds complexity, justify why that complexity is necessary.
 
-1. Abra uma issue para discussao antes de propor mudancas estruturais grandes.
-2. Mantenha as propostas especificas e ligadas a um problema concreto.
-3. Ao sugerir mudancas em blockchain ou IA, explique o impacto operacional.
-4. Prefira adicoes que melhorem clareza, auditabilidade, privacidade ou interoperabilidade.
-5. Se uma proposta aumentar a complexidade, justifique por que essa complexidade e necessaria.
+1. Abra uma issue para discussão antes de propor mudanças estruturais grandes.
+2. Mantenha as propostas específicas e ligadas a um problema concreto.
+3. Ao sugerir mudanças em blockchain ou IA, explique o impacto operacional.
+4. Prefira adições que melhorem clareza, auditabilidade, privacidade ou interoperabilidade.
+5. Se uma proposta aumentar a complexidade, justifique por que essa complexidade é necessária.
 
 ## Suggested contribution areas
 
@@ -78,4 +78,4 @@ Para pull requests, inclua:
 - por que mudou;
 - impacto esperado;
 - riscos ou tradeoffs;
-- se a mudanca afeta protocolo, privacidade, IA ou governanca.
+- se a mudança afeta protocolo, privacidade, IA ou governança.

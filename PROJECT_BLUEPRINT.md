@@ -1,110 +1,110 @@
 # Projeto: Postal Trust
 
-## 1. Visao Geral
+## 1. Visão Geral
 
-Este projeto propoe o `Postal Trust`, uma plataforma open source, self-hosted e federada para servicos postais, rastreamento logistico, cadeia de custodia, interoperabilidade entre operadores e automacao de processos usando blockchain permissionada e inteligencia artificial nativa.
+Este projeto propõe o `Postal Trust`, uma plataforma open source, self-hosted e federada para serviços postais, rastreamento logístico, cadeia de custódia, interoperabilidade entre operadores e automação de processos usando blockchain permissionada e inteligência artificial nativa.
 
-A plataforma deve permitir que qualquer empresa, operador logistico ou integrador possa:
+A plataforma deve permitir que qualquer empresa, operador logístico ou integrador possa:
 
-- instalar a solucao internamente;
-- operar sua propria rede blockchain permissionada;
+- instalar a solução internamente;
+- operar sua própria rede blockchain permissionada;
 - conectar seus sistemas existentes por API e protocolo aberto;
-- registrar eventos de custodia e movimentacao de objetos;
-- associar documentos, comprovantes e evidencias de forma auditavel;
-- usar IA em cada etapa operacional para leitura, validacao, risco, relatorios e apoio a decisao;
-- interoperar com outras instancias da plataforma no futuro.
+- registrar eventos de custódia e movimentação de objetos;
+- associar documentos, comprovantes e evidências de forma auditável;
+- usar IA em cada etapa operacional para leitura, validação, risco, relatórios e apoio à decisão;
+- interoperar com outras instâncias da plataforma no futuro.
 
-O objetivo nao e apenas "usar blockchain", mas aplicar blockchain onde ela gera valor real:
+O objetivo não é apenas "usar blockchain", mas aplicar blockchain onde ela gera valor real:
 
 - imutabilidade de eventos;
 - prova de integridade;
-- custodia verificavel;
-- automacao contratual;
+- custódia verificável;
+- automação contratual;
 - trilha de auditoria;
-- interoperabilidade confiavel entre participantes.
+- interoperabilidade confiável entre participantes.
 
-Ao mesmo tempo, a IA entra como camada nativa do produto para acelerar operacao, reduzir erro humano, apoiar compliance, detectar fraude e transformar dados em acao.
+Ao mesmo tempo, a IA entra como camada nativa do produto para acelerar operação, reduzir erro humano, apoiar compliance, detectar fraude e transformar dados em ação.
 
 ## 2. Tese Central do Produto
 
 O projeto deve ser posicionado como:
 
-> Postal Trust e uma infraestrutura blockchain open source para servicos postais e logistica, com blockchain permissionada, IA nativa, privacidade by design e federacao opcional entre empresas.
+> Postal Trust é uma infraestrutura blockchain open source para serviços postais e logística, com blockchain permissionada, IA nativa, privacidade by design e federação opcional entre empresas.
 
 Essa tese combina quatro pilares:
 
-1. blockchain para prova, custodia e execucao confiavel;
-2. IA para leitura, automacao, classificacao, previsao e assistencia;
-3. API e protocolo aberto para integracao e interoperabilidade;
-4. arquitetura self-hosted para facilitar adocao empresarial e aderencia a LGPD.
+1. blockchain para prova, custódia e execução confiável;
+2. IA para leitura, automação, classificação, previsão e assistência;
+3. API e protocolo aberto para integração e interoperabilidade;
+4. arquitetura self-hosted para facilitar adoção empresarial e aderência à LGPD.
 
 ## 3. Problemas que o Projeto Resolve
 
-### 3.1 Fragmentacao do rastreamento
+### 3.1 Fragmentação do rastreamento
 
-Hoje o rastreamento se perde quando um objeto passa por varios operadores, modais ou jurisdicoes.
+Hoje o rastreamento se perde quando um objeto passa por vários operadores, modais ou jurisdições.
 
-### 3.2 Falta de cadeia de custodia confiavel
+### 3.2 Falta de cadeia de custódia confiável
 
-Nao ha um mecanismo padronizado, auditavel e imutavel para provar quem recebeu, quem transportou, quando recebeu e em que condicao.
+Não há um mecanismo padronizado, auditável e imutável para provar quem recebeu, quem transportou, quando recebeu e em que condição.
 
 ### 3.3 Disputa operacional e financeira
 
-Extravio, atraso, avaria, responsabilidade, repasse e pagamento entre participantes costumam gerar conflito e pouca automacao.
+Extravio, atraso, avaria, responsabilidade, repasse e pagamento entre participantes costumam gerar conflito e pouca automação.
 
 ### 3.4 Baixa interoperabilidade
 
-Cada empresa tem seu proprio sistema, formato de evento, API e regra operacional.
+Cada empresa tem seu próprio sistema, formato de evento, API e regra operacional.
 
-### 3.5 Tratamento manual de documentos e excecoes
+### 3.5 Tratamento manual de documentos e exceções
 
 Notas, invoices, comprovantes, laudos, aduana e outros fluxos documentais ainda exigem muito trabalho manual.
 
-## 4. Principios de Arquitetura
+## 4. Princípios de Arquitetura
 
 1. `Blockchain de verdade, mas permissionada`
-   A plataforma precisa ter ledger distribuido, blocos encadeados, assinaturas, consenso e regras deterministicas.
+   A plataforma precisa ter ledger distribuído, blocos encadeados, assinaturas, consenso e regras determinísticas.
 
 2. `Self-hosted first`
-   A primeira proposta de valor e a empresa poder usar internamente sem depender de uma rede externa.
+   A primeira proposta de valor é a empresa poder usar internamente sem depender de uma rede externa.
 
-3. `Federacao por protocolo aberto`
-   Cada instancia deve poder interoperar com outras por meio de contratos de comunicacao e provas assinadas.
+3. `Federação por protocolo aberto`
+   Cada instância deve poder interoperar com outras por meio de contratos de comunicação e provas assinadas.
 
 4. `Privacidade by design`
-   Dados pessoais e sensiveis ficam fora da cadeia; a chain registra hashes, referencias e eventos pseudonimizados.
+   Dados pessoais e sensíveis ficam fora da cadeia; a chain registra hashes, referências e eventos pseudonimizados.
 
 5. `AI-native`
-   Toda grande funcionalidade deve considerar um componente de IA desde a concepcao.
+   Toda grande funcionalidade deve considerar um componente de IA desde a concepção.
 
-6. `Auditabilidade acima de automacao cega`
-   IA pode sugerir, resumir, classificar e alertar, mas marcos criticos precisam de rastreabilidade e governanca.
+6. `Auditabilidade acima de automação cega`
+   IA pode sugerir, resumir, classificar e alertar, mas marcos críticos precisam de rastreabilidade e governança.
 
 7. `Open protocol, open implementation`
-   O projeto deve oferecer especificacao aberta e implementacao de referencia open source.
+   O projeto deve oferecer especificação aberta e implementação de referência open source.
 
 ## 5. Modelo Recomendado
 
-## 5.1 Estrategia de produto
+## 5.1 Estratégia de produto
 
-Em vez de tentar lancar uma blockchain publica global desde o dia 1, o projeto deve nascer como:
+Em vez de tentar lançar uma blockchain pública global desde o dia 1, o projeto deve nascer como:
 
 - plataforma open source;
-- blockchain permissionada interna por empresa ou consorcio;
-- protocolo aberto de interoperabilidade entre instancias;
-- federacao opcional entre empresas;
-- rede compartilhada mais ampla como evolucao futura, nao como requisito inicial.
+- blockchain permissionada interna por empresa ou consórcio;
+- protocolo aberto de interoperabilidade entre instâncias;
+- federação opcional entre empresas;
+- rede compartilhada mais ampla como evolução futura, não como requisito inicial.
 
 ## 5.2 Justificativa
 
-Esse modelo e o mais equilibrado em:
+Esse modelo é o mais equilibrado em:
 
-- viabilidade tecnica;
-- facilidade de adocao;
-- adequacao a LGPD;
+- viabilidade técnica;
+- facilidade de adoção;
+- adequação à LGPD;
 - controle operacional;
 - compatibilidade com empresas de transporte;
-- coerencia com um projeto open no GitHub.
+- coerência com um projeto open no GitHub.
 
 ## 6. Blockchain no Centro do Sistema
 
@@ -112,45 +112,45 @@ Esse modelo e o mais equilibrado em:
 
 Blockchain deve ser usada para:
 
-- registrar eventos criticos de movimentacao;
-- registrar trocas de custodia;
+- registrar eventos críticos de movimentação;
+- registrar trocas de custódia;
 - ancorar hashes de documentos;
 - registrar regras de smart contracts;
 - registrar marcos financeiros relevantes;
-- permitir auditoria imutavel;
-- suportar federacao futura entre operadores.
+- permitir auditoria imutável;
+- suportar federação futura entre operadores.
 
-## 6.2 O que nao deve ir para a blockchain
+## 6.2 O que não deve ir para a blockchain
 
-Nao devem ir diretamente para a chain:
+Não devem ir diretamente para a chain:
 
-- nome completo de remetente e destinatario;
-- endereco completo;
+- nome completo de remetente e destinatário;
+- endereço completo;
 - telefone;
 - documentos completos;
 - imagens pesadas;
-- detalhes sensiveis de mercadoria sem protecao;
-- telemetria extensa e dados sem necessidade de prova imutavel.
+- detalhes sensíveis de mercadoria sem proteção;
+- telemetria extensa e dados sem necessidade de prova imutável.
 
 ## 6.3 Modelo de rede
 
-Cada empresa ou grupo participante pode operar sua propria rede blockchain permissionada com:
+Cada empresa ou grupo participante pode operar sua própria rede blockchain permissionada com:
 
-- nos validadores internos;
-- possiveis nos de parceiros homologados;
-- consenso rapido e energeticamente eficiente;
-- APIs para integracao;
-- regras locais de governanca e compliance.
+- nós validadores internos;
+- possíveis nós de parceiros homologados;
+- consenso rápido e energeticamente eficiente;
+- APIs para integração;
+- regras locais de governança e compliance.
 
 ## 6.4 Consenso recomendado
 
-Para este projeto, o caminho mais adequado e:
+Para este projeto, o caminho mais adequado é:
 
 - Proof of Authority;
 - BFT permissionado;
 - modelo similar a DPoS permissionado.
 
-Nao e recomendado usar Proof of Work no MVP.
+Não é recomendado usar Proof of Work no MVP.
 
 ## 7. IA Nativa Desde o Dia 1
 
@@ -159,19 +159,19 @@ Nao e recomendado usar Proof of Work no MVP.
 A IA deve ser parte estrutural da plataforma, atuando em:
 
 - leitura de documentos;
-- classificacao de eventos;
-- deteccao de inconsistencias;
+- classificação de eventos;
+- detecção de inconsistências;
 - resumo de remessas;
-- analise de risco;
-- assistencia operacional;
-- geracao de relatorios;
+- análise de risco;
+- assistência operacional;
+- geração de relatórios;
 - apoio a compliance;
-- deteccao de fraude;
-- explicacao de liquidações e contratos.
+- detecção de fraude;
+- explicação de liquidações e contratos.
 
 ## 7.2 Regra central
 
-IA nao deve ser fonte unica de verdade em decisoes criticas.
+IA não deve ser fonte única de verdade em decisões críticas.
 
 Modelo recomendado:
 
@@ -179,117 +179,117 @@ Modelo recomendado:
 - IA interpreta;
 - humano valida quando houver risco elevado.
 
-## 7.3 Modulos de IA recomendados
+## 7.3 Módulos de IA recomendados
 
 ### Agente documental
 
 - extrai campos de notas, invoices, comprovantes e certificados;
 - compara documentos com a remessa;
-- detecta lacunas e inconsistencias.
+- detecta lacunas e inconsistências.
 
 ### Agente operacional
 
 - acompanha remessas;
-- resume historico;
-- sugere proximos passos;
-- classifica excecoes.
+- resume histórico;
+- sugere próximos passos;
+- classifica exceções.
 
 ### Agente de compliance
 
-- verifica politica;
+- verifica política;
 - apoia mascaramento de dados;
-- detecta risco regulatorio.
+- detecta risco regulatório.
 
 ### Agente financeiro
 
 - explica repasses;
 - sugere splits;
-- analisa divergencias de liquidacao.
+- analisa divergências de liquidação.
 
 ### Agente de risco e fraude
 
-- detecta comportamento anomalo;
+- detecta comportamento anômalo;
 - calcula score de risco;
-- aponta sinais de tentativa de manipulacao.
+- aponta sinais de tentativa de manipulação.
 
 ### Agente de atendimento e copiloto
 
 - responde perguntas operacionais;
-- cria relatorios;
+- cria relatórios;
 - ajuda operadores, gestores e auditores.
 
 ## 8. Blocos do Sistema
 
 ## 8.1 Bloco A - Identidade da Remessa
 
-Responsavel por criar a identidade digital unica do objeto ou lote.
+Responsável por criar a identidade digital única do objeto ou lote.
 
 Elementos:
 
 - ID global da remessa;
 - ativo digital da remessa;
-- identificador fisico legivel, como QR, NFC ou selo antifraude;
+- identificador físico legível, como QR, NFC ou selo antifraude;
 - metadados da remessa;
-- vinculo com contratos e documentos.
+- vínculo com contratos e documentos.
 
 IA nesse bloco:
 
-- sugestao de metadados;
-- deteccao de duplicidade;
-- validacao de coerencia do cadastro.
+- sugestão de metadados;
+- detecção de duplicidade;
+- validação de coerência do cadastro.
 
 ## 8.2 Bloco B - Blockchain de Eventos
 
-Responsavel pelo registro imutavel da trilha principal.
+Responsável pelo registro imutável da trilha principal.
 
 Eventos principais:
 
-- criacao;
+- criação;
 - coleta;
 - entrada em hub;
-- saida de hub;
-- transferencia de custodia;
+- saída de hub;
+- transferência de custódia;
 - embarque;
 - desembarque;
-- liberacao documental;
+- liberação documental;
 - entrega;
-- excecao;
-- devolucao;
+- exceção;
+- devolução;
 - encerramento.
 
 IA nesse bloco:
 
-- classificacao automatica de eventos;
-- deteccao de saltos suspeitos;
-- resumo inteligente do historico.
+- classificação automática de eventos;
+- detecção de saltos suspeitos;
+- resumo inteligente do histórico.
 
-## 8.3 Bloco C - Custodia e Provas
+## 8.3 Bloco C - Custódia e Provas
 
-Responsavel por provar quem estava responsavel pelo objeto em cada etapa.
+Responsável por provar quem estava responsável pelo objeto em cada etapa.
 
 Elementos:
 
 - assinatura do participante;
 - timestamp;
-- localizacao autorizada;
-- evidencias;
+- localização autorizada;
+- evidências;
 - estado do objeto;
-- aceite e transferencia de responsabilidade.
+- aceite e transferência de responsabilidade.
 
 IA nesse bloco:
 
-- analise de divergencias;
-- deteccao de anomalias de custodia;
+- análise de divergências;
+- detecção de anomalias de custódia;
 - triagem de disputas.
 
 ## 8.4 Bloco D - Smart Contracts
 
-Responsavel por regras de negocio executaveis.
+Responsável por regras de negócio executáveis.
 
 Exemplos:
 
-- contrato de criacao da remessa;
-- contrato de custodia;
+- contrato de criação da remessa;
+- contrato de custódia;
 - contrato de repasse por etapa;
 - contrato de garantia ou seguro;
 - contrato de disputa;
@@ -297,13 +297,13 @@ Exemplos:
 
 IA nesse bloco:
 
-- simulacao de regras;
-- explicacao em linguagem natural;
-- apoio a parametrizacao contratual.
+- simulação de regras;
+- explicação em linguagem natural;
+- apoio a parametrização contratual.
 
-## 8.5 Bloco E - Documentos e Evidencias
+## 8.5 Bloco E - Documentos e Evidências
 
-Responsavel por armazenar e referenciar documentos fora da chain.
+Responsável por armazenar e referenciar documentos fora da chain.
 
 Exemplos:
 
@@ -315,26 +315,26 @@ Exemplos:
 - laudos;
 - certificados.
 
-Na chain vao:
+Na chain vão:
 
 - hash;
 - tipo;
-- referencia;
+- referência;
 - emissor;
 - timestamp;
-- status de validacao.
+- status de validação.
 
 IA nesse bloco:
 
 - OCR;
-- extracao de campos;
-- comparacao com remessa;
-- classificacao;
-- redacao de sumarios.
+- extração de campos;
+- comparação com remessa;
+- classificação;
+- redação de sumários.
 
-## 8.6 Bloco F - Financeiro e Liquidacao
+## 8.6 Bloco F - Financeiro e Liquidação
 
-Responsavel por repasses e compensacoes.
+Responsável por repasses e compensações.
 
 Elementos:
 
@@ -342,38 +342,38 @@ Elementos:
 - escrow;
 - garantia operacional;
 - penalidades;
-- bonus por SLA;
-- conciliacao.
+- bônus por SLA;
+- conciliação.
 
 IA nesse bloco:
 
-- previsao de custo;
-- analise de divergencia;
-- explicacao de repasses;
-- simulacao financeira.
+- previsão de custo;
+- análise de divergência;
+- explicação de repasses;
+- simulação financeira.
 
 ## 8.7 Bloco G - Risco, Fraude e Compliance
 
-Responsavel por monitorar confiabilidade operacional.
+Responsável por monitorar confiabilidade operacional.
 
 Elementos:
 
 - score de risco;
 - regras antifraude;
 - logs de auditoria;
-- politicas regulatorias;
+- políticas regulatórias;
 - alertas.
 
 IA nesse bloco:
 
-- deteccao de padroes anormais;
-- priorizacao de ocorrencias;
-- apoio a auditoria;
-- classificacao de risco.
+- detecção de padrões anormais;
+- priorização de ocorrências;
+- apoio à auditoria;
+- classificação de risco.
 
 ## 8.8 Bloco H - API e Protocolo Aberto
 
-Responsavel por conectar a plataforma ao ecossistema externo.
+Responsável por conectar a plataforma ao ecossistema externo.
 
 Elementos:
 
@@ -381,65 +381,65 @@ Elementos:
 - webhooks;
 - SDKs;
 - mensageria;
-- autenticacao;
+- autenticação;
 - assinatura de mensagens;
-- protocolo federado entre instancias.
+- protocolo federado entre instâncias.
 
 IA nesse bloco:
 
-- traducao semantica de eventos;
-- assistencia para integradores;
-- validacao de payloads e contratos.
+- tradução semântica de eventos;
+- assistência para integradores;
+- validação de payloads e contratos.
 
-## 8.9 Bloco I - Aplicacoes
+## 8.9 Bloco I - Aplicações
 
 Interfaces do sistema:
 
 - painel administrativo;
 - painel de auditoria;
-- portal de integracao;
+- portal de integração;
 - app de operador;
 - app de transportador;
 - copiloto IA;
-- API publica e privada.
+- API pública e privada.
 
 IA nesse bloco:
 
 - chat operacional;
 - consultas em linguagem natural;
-- relatorios automaticos;
+- relatórios automáticos;
 - suporte contextual.
 
-## 9. Fluxo Operacional de Alto Nivel
+## 9. Fluxo Operacional de Alto Nível
 
-1. usuario ou empresa cria a remessa;
-2. sistema gera identidade digital e identificador fisico;
-3. documentos sao anexados e hasheados;
-4. blockchain registra a criacao;
-5. operador coleta o objeto e assume custodia;
-6. cada mudanca relevante gera evento assinado;
-7. IA acompanha inconsistencias e excecoes;
+1. usuário ou empresa cria a remessa;
+2. sistema gera identidade digital e identificador físico;
+3. documentos são anexados e hasheados;
+4. blockchain registra a criação;
+5. operador coleta o objeto e assume custódia;
+6. cada mudança relevante gera evento assinado;
+7. IA acompanha inconsistências e exceções;
 8. contratos executam repasses por etapa;
-9. entrega e confirmada;
-10. trilha final fica auditavel e consultavel.
+9. entrega é confirmada;
+10. trilha final fica auditável e consultável.
 
 ## 10. Modelo de Privacidade e LGPD
 
-### 10.1 Principio
+### 10.1 Princípio
 
-O sistema precisa ser auditavel sem expor desnecessariamente dados pessoais.
+O sistema precisa ser auditável sem expor desnecessariamente dados pessoais.
 
 ### 10.2 Medidas principais
 
-- pseudonimizacao de IDs;
-- segregacao entre dados on-chain e off-chain;
-- criptografia de dados sensiveis;
+- pseudonimização de IDs;
+- segregação entre dados on-chain e off-chain;
+- criptografia de dados sensíveis;
 - controle de acesso por papel;
-- minimizacao de dados;
+- minimização de dados;
 - logs de acesso;
-- capacidade de governanca sobre visibilidade e compartilhamento.
+- capacidade de governança sobre visibilidade e compartilhamento.
 
-### 10.3 Estrategia de dados
+### 10.3 Estratégia de dados
 
 On-chain:
 
@@ -447,157 +447,157 @@ On-chain:
 - eventos;
 - hashes;
 - timestamps;
-- referencias;
-- mudancas de estado;
+- referências;
+- mudanças de estado;
 - assinaturas;
-- referencias contratuais.
+- referências contratuais.
 
 Off-chain:
 
 - dados pessoais;
-- dados comerciais sensiveis;
+- dados comerciais sensíveis;
 - anexos completos;
 - documentos integrais;
-- evidencias multimidia completas;
+- evidências multimídia completas;
 - dados internos de ERP/TMS/WMS.
 
-## 11. Governanca
+## 11. Governança
 
-## 11.1 Governanca local por instancia
+## 11.1 Governança local por instância
 
-Cada empresa ou consorcio define:
+Cada empresa ou consórcio define:
 
-- quem pode operar como no;
+- quem pode operar como nó;
 - quem pode registrar eventos;
 - quais parceiros podem participar;
-- politicas de compliance;
+- políticas de compliance;
 - regras de auditoria;
-- criterios de revogacao.
+- critérios de revogação.
 
-## 11.2 Governanca federada futura
+## 11.2 Governança federada futura
 
-Quando houver interoperabilidade entre instancias:
+Quando houver interoperabilidade entre instâncias:
 
-- regras de confianca entre participantes;
-- contrato de intercambio;
-- padrao de assinatura;
+- regras de confiança entre participantes;
+- contrato de intercâmbio;
+- padrão de assinatura;
 - arbitragem de disputas;
-- catalogo de participantes homologados.
+- catálogo de participantes homologados.
 
-## 12. Modelo de Adocao e Mercado
+## 12. Modelo de Adoção e Mercado
 
 ## 12.1 O que faz sentido para o mercado
 
-O projeto e mais forte se for vendido como:
+O projeto é mais forte se for vendido como:
 
-- plataforma interna para rastreabilidade auditavel;
-- base de cadeia de custodia entre parceiros;
-- protocolo aberto para integracao entre operadores;
-- infraestrutura com IA para automacao operacional.
+- plataforma interna para rastreabilidade auditável;
+- base de cadeia de custódia entre parceiros;
+- protocolo aberto para integração entre operadores;
+- infraestrutura com IA para automação operacional.
 
-## 12.2 Onde ha maior aderencia inicial
+## 12.2 Onde há maior aderência inicial
 
 - objetos de alto valor;
 - cadeia multimodal;
-- operacoes cross-border;
-- remessas com forte exigencia documental;
+- operações cross-border;
+- remessas com forte exigência documental;
 - seguros e sinistros;
 - cadeias com muitos terceiros.
 
-## 12.3 Onde ha menor aderencia inicial
+## 12.3 Onde há menor aderência inicial
 
 - encomendas simples de baixo valor;
-- operacoes totalmente internas sem dor de interoperabilidade;
+- operações totalmente internas sem dor de interoperabilidade;
 - casos em que blockchain seria apenas marketing.
 
 ## 13. MVP Recomendado
 
-O MVP deve ser pequeno, forte e demonstravel.
+O MVP deve ser pequeno, forte e demonstrável.
 
 ### 13.1 Escopo do MVP
 
 - uma blockchain permissionada self-hosted;
 - cadastro de remessas;
-- geracao de identificador fisico simples, como QR;
+- geração de identificador físico simples, como QR;
 - registro de eventos principais;
-- transferencia de custodia;
-- anexacao de documentos com hash on-chain;
+- transferência de custódia;
+- anexação de documentos com hash on-chain;
 - painel web administrativo;
-- API aberta basica;
+- API aberta básica;
 - copiloto IA para resumo e consulta;
 - OCR e leitura documental;
-- alertas de inconsistencias;
-- relatorios automaticos.
+- alertas de inconsistências;
+- relatórios automáticos.
 
 ### 13.2 Eventos do MVP
 
-- criacao;
+- criação;
 - coleta;
 - entrada em centro;
-- saida de centro;
-- transferencia de custodia;
+- saída de centro;
+- transferência de custódia;
 - entrega;
-- excecao.
+- exceção.
 
 ### 13.3 IA no MVP
 
 - OCR documental;
-- extracao de campos;
+- extração de campos;
 - resumo de remessa;
-- classificacao de excecao;
+- classificação de exceção;
 - consulta em linguagem natural;
-- geracao de relatorio basico.
+- geração de relatório básico.
 
 ## 14. Roadmap Sugerido
 
-## Fase 1 - Fundacao
+## Fase 1 - Fundação
 
-- especificacao do dominio;
+- especificação do domínio;
 - modelo de dados;
 - arquitetura blockchain permissionada;
 - API base;
 - painel administrativo inicial;
 - registro de remessas e eventos;
 - hashes de documentos;
-- modulo inicial de IA documental e operacional.
+- módulo inicial de IA documental e operacional.
 
-## Fase 2 - Custodia e Inteligencia Operacional
+## Fase 2 - Custódia e Inteligência Operacional
 
-- transferencia de custodia assinada;
-- comprovacoes e evidencias;
+- transferência de custódia assinada;
+- comprovações e evidências;
 - score de risco;
 - copiloto operacional;
-- relatorios de auditoria;
+- relatórios de auditoria;
 - regras iniciais de smart contracts.
 
 ## Fase 3 - Financeiro e Compliance
 
 - split financeiro;
-- conciliacao;
+- conciliação;
 - disputas;
-- compliance documental mais avancado;
-- controles refinados de permissao e privacidade.
+- compliance documental mais avançado;
+- controles refinados de permissão e privacidade.
 
-## Fase 4 - Federacao
+## Fase 4 - Federação
 
-- protocolo entre instancias;
+- protocolo entre instâncias;
 - roteamento entre empresas;
 - interoperabilidade de eventos;
-- confianca cruzada;
-- reconciliacao entre redes.
+- confiança cruzada;
+- reconciliação entre redes.
 
 ## Fase 5 - Ecossistema Ampliado
 
-- marketplace de integracoes;
+- marketplace de integrações;
 - diretório de participantes;
 - seguros;
-- reputacao;
-- recursos avancados de governanca;
-- possivel ancora publica opcional.
+- reputação;
+- recursos avançados de governança;
+- possível âncora pública opcional.
 
-## 15. Estrutura Inicial do Repositorio
+## 15. Estrutura Inicial do Repositório
 
-Sugestao de estrutura:
+Sugestão de estrutura:
 
 ```text
 /
@@ -632,30 +632,30 @@ Sugestao de estrutura:
 |   |-- docker/
 |   |-- k8s/
 |   `-- observability/
-`-- examples/
-    |-- local-demo/
-    `-- partner-integration/
+|-- examples/
+|   |-- local-demo/
+|   `-- partner-integration/
 ```
 
-## 16. Decisoes Estrategicas Ja Consolidadas
+## 16. Decisões Estratégicas Já Consolidadas
 
 1. o projeto deve ser open source;
 2. o projeto deve usar blockchain como tecnologia central;
 3. a blockchain inicial deve ser permissionada e self-hosted;
-4. o projeto deve nascer preparado para federacao;
+4. o projeto deve nascer preparado para federação;
 5. a IA deve ser parte nativa da arquitetura desde o primeiro dia;
 6. a plataforma deve ser API-first;
 7. a LGPD deve ser tratada como requisito estrutural;
 8. o MVP deve priorizar valor operacional e auditabilidade;
-9. token especulativo ou rede publica irrestrita nao sao prioridade inicial.
+9. token especulativo ou rede pública irrestrita não são prioridade inicial.
 
 ## 17. Riscos Principais
 
-### Riscos tecnicos
+### Riscos técnicos
 
 - exagerar o escopo da blockchain;
 - colocar dados demais on-chain;
-- acoplar demais a IA a decisoes criticas;
+- acoplar demais a IA a decisões críticas;
 - dificuldade de interoperabilidade federada.
 
 ### Riscos de produto
@@ -664,39 +664,39 @@ Sugestao de estrutura:
 - onboarding complexo para empresas;
 - proposta de valor abstrata demais.
 
-### Riscos de governanca
+### Riscos de governança
 
-- falta de modelo claro para confianca entre participantes;
+- falta de modelo claro para confiança entre participantes;
 - ambiguidades em arbitragem e disputa;
-- dificuldade de homologacao de parceiros.
+- dificuldade de homologação de parceiros.
 
-## 18. Perguntas que Guiam as Proximas Etapas
+## 18. Perguntas que Guiam as Próximas Etapas
 
 1. qual nicho inicial de mercado vamos atacar primeiro?
-2. o MVP sera focado em transporte de alto valor, documentos ou cross-border?
-3. qual stack tecnica vamos adotar para a blockchain permissionada?
-4. que partes da IA serao entregues na primeira release?
-5. como sera o protocolo inicial entre instancias?
-6. qual interface sera priorizada primeiro: API, painel administrativo ou ambos?
+2. o MVP será focado em transporte de alto valor, documentos ou cross-border?
+3. qual stack técnica vamos adotar para a blockchain permissionada?
+4. que partes da IA serão entregues na primeira release?
+5. como será o protocolo inicial entre instâncias?
+6. qual interface será priorizada primeiro: API, painel administrativo ou ambos?
 
 ## 19. Resumo Executivo
 
-Este projeto deve evoluir como o `Postal Trust`, uma plataforma open source de blockchain permissionada, com IA nativa, voltada para servicos postais, rastreabilidade logistica, cadeia de custodia e interoperabilidade empresarial.
+Este projeto deve evoluir como o `Postal Trust`, uma plataforma open source de blockchain permissionada, com IA nativa, voltada para serviços postais, rastreabilidade logística, cadeia de custódia e interoperabilidade empresarial.
 
-O modelo mais viavel e:
+O modelo mais viável é:
 
-- self-hosted no inicio;
+- self-hosted no início;
 - federado por protocolo aberto;
 - com blockchain no centro da prova e da auditoria;
-- com IA no centro da automacao e da inteligencia operacional;
-- com dados sensiveis fora da chain;
-- com forte foco em adocao empresarial real.
+- com IA no centro da automação e da inteligência operacional;
+- com dados sensíveis fora da chain;
+- com forte foco em adoção empresarial real.
 
-O diferencial do projeto nao sera apenas registrar eventos em cadeia, mas unir:
+O diferencial do projeto não será apenas registrar eventos em cadeia, mas unir:
 
-- confianca criptografica;
-- integracao aberta;
-- inteligencia operacional;
+- confiança criptográfica;
+- integração aberta;
+- inteligência operacional;
 - auditabilidade;
 - privacidade;
-- preparacao para ecossistema multiempresa.
+- preparação para ecossistema multiempresa.

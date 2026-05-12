@@ -2,61 +2,61 @@
 
 ## Postal Trust
 
-Infraestrutura blockchain open source para servicos postais e logistica, com blockchain permissionada e IA nativa para rastreabilidade, cadeia de custodia e interoperabilidade entre operadores.
+Infraestrutura blockchain open source para serviços postais e logística, com blockchain permissionada e IA nativa para rastreabilidade, cadeia de custódia e interoperabilidade entre operadores.
 
 ## Status do documento
 
-Versao: `0.1-draft`
+Versão: `0.1-draft`
 
 Data: `2026-05-12`
 
-Licenca sugerida para o documento: `CC BY 4.0`
+Licença sugerida para o documento: `CC BY 4.0`
 
 Status atual:
 
 - documento conceitual inicial;
-- aberto a comentarios, critica tecnica e contribuicoes da comunidade;
-- sujeito a revisoes arquiteturais conforme a evolucao do repositorio.
+- aberto a comentários, crítica técnica e contribuições da comunidade;
+- sujeito a revisões arquiteturais conforme a evolução do repositório.
 
 ## Resumo
 
-O setor postal e logistico ainda opera com rastreamento fragmentado, baixa interoperabilidade entre empresas, disputa recorrente sobre custodia e grande dependencia de processos manuais para validacao documental, conciliacao e auditoria. Este white paper propoe o `Postal Trust`, uma plataforma open source baseada em blockchain permissionada e inteligencia artificial nativa, desenhada para permitir rastreabilidade auditavel, cadeia de custodia verificavel, automacao contratual e integracao federada entre operadores.
+O setor postal e logístico ainda opera com rastreamento fragmentado, baixa interoperabilidade entre empresas, disputa recorrente sobre custódia e grande dependência de processos manuais para validação documental, conciliação e auditoria. Este white paper propõe o `Postal Trust`, uma plataforma open source baseada em blockchain permissionada e inteligência artificial nativa, desenhada para permitir rastreabilidade auditável, cadeia de custódia verificável, automação contratual e integração federada entre operadores.
 
-O projeto adota uma abordagem `self-hosted first`: cada empresa pode operar sua propria instancia e sua propria rede permissionada, mantendo controle sobre dados sensiveis e regras operacionais. Ao mesmo tempo, a plataforma nasce com um protocolo aberto para permitir interoperabilidade futura entre instancias, formando uma camada federada de confianca entre organizacoes do ecossistema postal e logistico.
+O projeto adota uma abordagem `self-hosted first`: cada empresa pode operar sua própria instância e sua própria rede permissionada, mantendo controle sobre dados sensíveis e regras operacionais. Ao mesmo tempo, a plataforma nasce com um protocolo aberto para permitir interoperabilidade futura entre instâncias, formando uma camada federada de confiança entre organizações do ecossistema postal e logístico.
 
-A blockchain e usada como mecanismo de imutabilidade, prova e coordenacao. A IA e usada como camada de leitura, classificacao, automacao, explicacao, deteccao de anomalias e apoio a decisao. O objetivo nao e criar apenas mais um sistema de rastreamento, nem uma blockchain generica para logistica, mas uma infraestrutura aberta que una `confianca criptografica`, `operacao empresarial`, `privacidade by design` e `inteligencia operacional`.
+A blockchain é usada como mecanismo de imutabilidade, prova e coordenação. A IA é usada como camada de leitura, classificação, automação, explicação, detecção de anomalias e apoio à decisão. O objetivo não é criar apenas mais um sistema de rastreamento, nem uma blockchain genérica para logística, mas uma infraestrutura aberta que una `confiança criptográfica`, `operação empresarial`, `privacidade by design` e `inteligência operacional`.
 
 ## 1. O problema
 
-Sistemas logisticos atuais tendem a apresentar pelo menos cinco limitacoes estruturais:
+Sistemas logísticos atuais tendem a apresentar pelo menos cinco limitações estruturais:
 
 1. `Rastreamento fragmentado`
-Cada operador registra eventos em sua propria base, com formatos e semanticas distintas, o que dificulta visibilidade ponta a ponta.
+Cada operador registra eventos em sua própria base, com formatos e semânticas distintas, o que dificulta visibilidade ponta a ponta.
 
-2. `Ausencia de cadeia de custodia auditavel`
-Nem sempre existe prova forte, padronizada e imutavel sobre quem detinha a responsabilidade pelo objeto em determinado momento.
+2. `Ausência de cadeia de custódia auditável`
+Nem sempre existe prova forte, padronizada e imutável sobre quem detinha a responsabilidade pelo objeto em determinado momento.
 
 3. `Baixa interoperabilidade`
-Integracoes entre empresas costumam ser caras, lentas e dependentes de contratos bilaterais especificos.
+Integrações entre empresas costumam ser caras, lentas e dependentes de contratos bilaterais específicos.
 
 4. `Processos manuais excessivos`
-Documentos, comprovantes, excecoes e disputas ainda exigem grande carga de trabalho humano.
+Documentos, comprovantes, exceções e disputas ainda exigem grande carga de trabalho humano.
 
-5. `Dificuldade de conciliacao entre verdade operacional e verdade juridica`
-Uma informacao pode existir em um sistema, mas ser dificil de provar, auditar ou reconciliar diante de uma disputa.
+5. `Dificuldade de conciliação entre verdade operacional e verdade jurídica`
+Uma informação pode existir em um sistema, mas ser difícil de provar, auditar ou reconciliar diante de uma disputa.
 
 ## 2. A tese do projeto
 
 O `Postal Trust` parte da seguinte tese:
 
-> A logistica multioperador precisa de uma camada aberta de confianca e interoperabilidade, na qual blockchain garanta integridade e custodia, enquanto IA reduza friccao operacional, acelere analise e amplie a capacidade de decisao.
+> A logística multioperador precisa de uma camada aberta de confiança e interoperabilidade, na qual blockchain garanta integridade e custódia, enquanto IA reduza fricção operacional, acelere análise e amplie a capacidade de decisão.
 
-Em vez de assumir que uma blockchain publica irrestrita resolvera o problema por si so, o projeto adota uma estrategia mais pragmatica:
+Em vez de assumir que uma blockchain pública irrestrita resolverá o problema por si só, o projeto adota uma estratégia mais pragmática:
 
-- blockchain permissionada por instancia;
+- blockchain permissionada por instância;
 - software open source;
-- operacao self-hosted;
-- protocolo aberto para federacao;
+- operação self-hosted;
+- protocolo aberto para federação;
 - IA nativa desde o primeiro dia;
 - privacidade e conformidade como requisitos centrais.
 
@@ -64,89 +64,89 @@ Em vez de assumir que uma blockchain publica irrestrita resolvera o problema por
 
 O projeto busca atingir os seguintes objetivos:
 
-1. criar uma trilha imutavel e verificavel de eventos logisticos;
-2. padronizar a transferencia de custodia entre participantes;
-3. ancorar documentos e evidencias de forma auditavel;
-4. permitir automacao de regras operacionais e financeiras;
-5. oferecer APIs e SDKs para integracao com sistemas empresariais;
-6. usar IA para leitura documental, classificacao, explicacao, risco e suporte operacional;
-7. permitir que organizacoes operem de forma independente e interoperavel;
+1. criar uma trilha imutável e verificável de eventos logísticos;
+2. padronizar a transferência de custódia entre participantes;
+3. ancorar documentos e evidências de forma auditável;
+4. permitir automação de regras operacionais e financeiras;
+5. oferecer APIs e SDKs para integração com sistemas empresariais;
+6. usar IA para leitura documental, classificação, explicação, risco e suporte operacional;
+7. permitir que organizações operem de forma independente e interoperável;
 8. fomentar uma comunidade open source em torno de um protocolo aberto.
 
-## 4. Principios de design
+## 4. Princípios de design
 
-### 4.1 Blockchain com funcao clara
+### 4.1 Blockchain com função clara
 
-A blockchain deve resolver problemas reais de integridade, custodia, prova e automacao. Ela nao deve ser usada apenas como substituta generica de banco de dados.
+A blockchain deve resolver problemas reais de integridade, custódia, prova e automação. Ela não deve ser usada apenas como substituta genérica de banco de dados.
 
 ### 4.2 Self-hosted first
 
-A primeira proposta de valor precisa ser util para uma unica empresa. O projeto nao deve depender de adesao massiva inicial para funcionar.
+A primeira proposta de valor precisa ser útil para uma única empresa. O projeto não deve depender de adesão massiva inicial para funcionar.
 
-### 4.3 Federacao por padrao aberto
+### 4.3 Federação por padrão aberto
 
-Cada instancia deve ser capaz de conversar com outras usando um protocolo comum, sem exigir um operador central unico.
+Cada instância deve ser capaz de conversar com outras usando um protocolo comum, sem exigir um operador central único.
 
 ### 4.4 Privacidade by design
 
-Dados pessoais, comerciais sensiveis e anexos completos devem permanecer fora da chain sempre que possivel.
+Dados pessoais, comerciais sensíveis e anexos completos devem permanecer fora da chain sempre que possível.
 
-### 4.5 IA nativa, mas auditavel
+### 4.5 IA nativa, mas auditável
 
-A IA deve participar do fluxo desde o inicio, mas suas saidas precisam ser controlaveis, observaveis e revisaveis.
+A IA deve participar do fluxo desde o início, mas suas saídas precisam ser controláveis, observáveis e revisáveis.
 
-### 4.6 Governanca antes de escala
+### 4.6 Governança antes de escala
 
-Regras de participacao, validacao, confianca e arbitragem devem ser desenhadas antes da expansao para redes multiempresa mais abertas.
+Regras de participação, validação, confiança e arbitragem devem ser desenhadas antes da expansão para redes multiempresa mais abertas.
 
 ## 5. Escopo do sistema
 
-O `Postal Trust` propoe uma infraestrutura para:
+O `Postal Trust` propõe uma infraestrutura para:
 
 - identidade digital de remessas;
 - rastreamento de eventos;
-- cadeia de custodia;
-- vinculacao de documentos e evidencias;
-- automacao por smart contracts;
-- integracao por API;
-- relatorios e copilotos com IA;
-- federacao futura entre empresas e parceiros.
+- cadeia de custódia;
+- vinculação de documentos e evidências;
+- automação por smart contracts;
+- integração por API;
+- relatórios e copilotos com IA;
+- federação futura entre empresas e parceiros.
 
-O projeto nao parte da premissa de substituir toda a logistica existente. Em vez disso, ele atua como `camada de confianca e interoperabilidade` sobre processos e sistemas ja existentes.
+O projeto não parte da premissa de substituir toda a logística existente. Em vez disso, ele atua como `camada de confiança e interoperabilidade` sobre processos e sistemas já existentes.
 
-## 6. Arquitetura de alto nivel
+## 6. Arquitetura de alto nível
 
-O desenho da plataforma e organizado em camadas.
+O desenho da plataforma é organizado em camadas.
 
 ### 6.1 Camada blockchain
 
-Responsavel por:
+Responsável por:
 
-- ledger distribuido;
-- registro de eventos criticos;
-- transferencia de custodia;
+- ledger distribuído;
+- registro de eventos críticos;
+- transferência de custódia;
 - ancoragem de hashes;
-- execucao de smart contracts;
-- validacao e consenso entre nos autorizados.
+- execução de smart contracts;
+- validação e consenso entre nós autorizados.
 
-### 6.2 Camada de dominio logistico
+### 6.2 Camada de domínio logístico
 
-Responsavel por:
+Responsável por:
 
 - remessas;
 - itens ou lotes;
 - eventos;
-- custodias;
-- excecoes;
+- custódias;
+- exceções;
 - entregas;
-- devolucoes.
+- devoluções.
 
 ### 6.3 Camada documental
 
-Responsavel por:
+Responsável por:
 
 - armazenamento off-chain;
-- referencias criptograficas;
+- referências criptográficas;
 - comprovantes;
 - notas fiscais;
 - invoices;
@@ -155,111 +155,111 @@ Responsavel por:
 
 ### 6.4 Camada financeira
 
-Responsavel por:
+Responsável por:
 
 - split por etapa;
 - garantias operacionais;
-- conciliacao;
-- bonus e penalidades;
-- liquidacao contratual.
+- conciliação;
+- bônus e penalidades;
+- liquidação contratual.
 
 ### 6.5 Camada de IA
 
-Responsavel por:
+Responsável por:
 
-- OCR e extracao documental;
-- classificacao de eventos;
+- OCR e extração documental;
+- classificação de eventos;
 - resumo de remessas;
-- deteccao de inconsistencias;
-- explicacao de decisoes;
+- detecção de inconsistências;
+- explicação de decisões;
 - suporte conversacional;
-- analise de risco e fraude.
+- análise de risco e fraude.
 
-### 6.6 Camada de integracao
+### 6.6 Camada de integração
 
-Responsavel por:
+Responsável por:
 
 - APIs;
 - webhooks;
 - filas e eventos;
 - SDKs;
 - adaptadores para ERP, TMS, WMS e sistemas legados;
-- interoperabilidade entre instancias.
+- interoperabilidade entre instâncias.
 
-## 7. Blockchain permissionada como fundacao
+## 7. Blockchain permissionada como fundação
 
-O projeto assume desde o inicio que a melhor arquitetura para o problema e uma `blockchain permissionada`, e nao uma cadeia publica irrestrita.
+O projeto assume desde o início que a melhor arquitetura para o problema é uma `blockchain permissionada`, e não uma cadeia pública irrestrita.
 
 ### 7.1 Motivos
 
-1. melhor controle de participacao e escrita;
-2. maior aderencia a LGPD e sigilo empresarial;
+1. melhor controle de participação e escrita;
+2. maior aderência à LGPD e sigilo empresarial;
 3. menor custo operacional;
 4. melhor previsibilidade de performance;
 5. compatibilidade com ambientes corporativos;
-6. caminho mais realista para adocao.
+6. caminho mais realista para adoção.
 
 ### 7.2 Consenso
 
-Os mecanismos mais coerentes para o projeto sao:
+Os mecanismos mais coerentes para o projeto são:
 
 - `Proof of Authority`;
 - `BFT permissionado`;
 - variantes de `DPoS permissionado`.
 
-`Proof of Work` nao e prioridade, por nao ser adequado ao perfil de throughput, latencia e custo esperado para logistica empresarial.
+`Proof of Work` não é prioridade, por não ser adequado ao perfil de throughput, latência e custo esperado para logística empresarial.
 
-### 7.3 Estrutura de nos
+### 7.3 Estrutura de nós
 
-Uma instancia pode operar com nos distribuidos entre:
+Uma instância pode operar com nós distribuídos entre:
 
 - matriz;
 - filiais;
-- hubs logisticos;
+- hubs logísticos;
 - parceiros homologados;
 - auditor independente;
-- seguradora ou entidade de garantia, quando aplicavel.
+- seguradora ou entidade de garantia, quando aplicável.
 
-## 8. O que vai e o que nao vai on-chain
+## 8. O que vai e o que não vai on-chain
 
 ### 8.1 Recomendado on-chain
 
 - IDs pseudonimizados;
-- criacao da remessa;
-- eventos criticos;
-- transferencias de custodia;
+- criação da remessa;
+- eventos críticos;
+- transferências de custódia;
 - hashes de documentos;
-- referencias contratuais;
+- referências contratuais;
 - estados de workflow;
-- marcos de liquidacao.
+- marcos de liquidação.
 
 ### 8.2 Recomendado off-chain
 
 - dados pessoais em claro;
-- enderecos completos;
+- endereços completos;
 - documentos integrais;
-- fotos e videos completos;
+- fotos e vídeos completos;
 - anexos pesados;
 - telemetria extensa;
-- informacoes comerciais sensiveis nao essenciais para prova imutavel.
+- informações comerciais sensíveis não essenciais para prova imutável.
 
 ## 9. IA nativa desde o primeiro dia
 
-A IA nao entra como chatbot decorativo. Ela faz parte da proposta estrutural do sistema.
+A IA não entra como chatbot decorativo. Ela faz parte da proposta estrutural do sistema.
 
-### 9.1 Funcoes da IA
+### 9.1 Funções da IA
 
 1. `Interpretar`
 Ler documentos, mensagens, comprovantes e contexto operacional.
 
 2. `Classificar`
-Organizar eventos, excecoes, riscos e incidentes.
+Organizar eventos, exceções, riscos e incidentes.
 
 3. `Explicar`
-Gerar relatorios, sumarios, justificativas e descricoes operacionais.
+Gerar relatórios, sumários, justificativas e descrições operacionais.
 
 4. `Detectar`
-Apontar anomalias, divergencias, fraude e inconsistencias.
+Apontar anomalias, divergências, fraude e inconsistências.
 
 5. `Apoiar`
 Atuar como copiloto para operadores, integradores, analistas e auditores.
@@ -269,258 +269,258 @@ Antecipar risco de atraso, ruptura, falha documental ou disputa.
 
 ### 9.2 Guardrails
 
-O projeto deve adotar desde o inicio:
+O projeto deve adotar desde o início:
 
-- trilha de auditoria para automacoes relevantes;
+- trilha de auditoria para automações relevantes;
 - controle de acesso a dados usados em prompts;
-- revisao humana para decisoes criticas;
-- politicas de mascaramento e minimizacao de dados;
-- capacidade de desligar fluxos de IA sem interromper o nucleo operacional.
+- revisão humana para decisões críticas;
+- políticas de mascaramento e minimização de dados;
+- capacidade de desligar fluxos de IA sem interromper o núcleo operacional.
 
 ### 9.3 Regra central
 
-> A IA interpreta. A blockchain prova. A governanca decide.
+> A IA interpreta. A blockchain prova. A governança decide.
 
-## 10. Privacidade, seguranca e conformidade
+## 10. Privacidade, segurança e conformidade
 
-Privacidade e conformidade nao sao anexos do projeto. Sao parte do desenho fundamental.
+Privacidade e conformidade não são anexos do projeto. São parte do desenho fundamental.
 
 ### 10.1 Privacidade
 
 Medidas base:
 
-- pseudonimizacao;
+- pseudonimização;
 - criptografia;
-- segregacao on-chain e off-chain;
-- minimizacao de dados;
+- segregação on-chain e off-chain;
+- minimização de dados;
 - controle de acesso por papel;
-- logs de consulta e manipulacao.
+- logs de consulta e manipulação.
 
 ### 10.2 LGPD
 
-O projeto deve ser concebido para reduzir exposicao de dados pessoais na camada imutavel. O foco da chain deve ser a prova do evento e nao a publicacao irrestrita do dado.
+O projeto deve ser concebido para reduzir exposição de dados pessoais na camada imutável. O foco da chain deve ser a prova do evento e não a publicação irrestrita do dado.
 
-### 10.3 Seguranca
+### 10.3 Segurança
 
 Medidas esperadas:
 
-- assinatura criptografica de eventos;
-- rotacao de credenciais;
-- autenticacao forte;
+- assinatura criptográfica de eventos;
+- rotação de credenciais;
+- autenticação forte;
 - trilha de auditoria;
-- gestao de segredos;
-- validacao de integridade documental;
-- politicas de revogacao e suspensao de participantes.
+- gestão de segredos;
+- validação de integridade documental;
+- políticas de revogação e suspensão de participantes.
 
-## 11. Governanca
+## 11. Governança
 
-O modelo de governanca precisa existir tanto no nivel local quanto no federado.
+O modelo de governança precisa existir tanto no nível local quanto no federado.
 
-### 11.1 Governanca por instancia
+### 11.1 Governança por instância
 
-Cada instancia define:
+Cada instância define:
 
 - quem pode operar como validador;
 - quem pode registrar eventos;
-- politicas de onboarding;
-- politicas de auditoria;
-- niveis de permissao;
+- políticas de onboarding;
+- políticas de auditoria;
+- níveis de permissão;
 - resposta a incidentes;
-- regras de suspensao e revogacao.
+- regras de suspensão e revogação.
 
-### 11.2 Governanca federada
+### 11.2 Governança federada
 
-Em redes interoperaveis, sera necessario definir:
+Em redes interoperáveis, será necessário definir:
 
-- padroes de confianca cruzada;
+- padrões de confiança cruzada;
 - protocolos de assinatura;
-- semantica comum de eventos;
+- semântica comum de eventos;
 - arbitragem de disputas;
-- criterios de homologacao entre instancias.
+- critérios de homologação entre instâncias.
 
-## 12. Modelo de adocao
+## 12. Modelo de adoção
 
-O caminho de adocao mais realista nao e convencer o mercado inteiro a entrar numa unica rede desde o dia 1. O caminho e:
+O caminho de adoção mais realista não é convencer o mercado inteiro a entrar numa única rede desde o dia 1. O caminho é:
 
 1. uma empresa adota internamente;
-2. integra parceiros proximos;
-3. padroniza eventos e cadeia de custodia;
-4. conecta-se a outras instancias;
-5. participa de uma federacao mais ampla.
+2. integra parceiros próximos;
+3. padroniza eventos e cadeia de custódia;
+4. conecta-se a outras instâncias;
+5. participa de uma federação mais ampla.
 
-Isso reduz barreira de entrada e aumenta chance de validacao progressiva.
+Isso reduz barreira de entrada e aumenta chance de validação progressiva.
 
-## 13. Casos de uso prioritarios
+## 13. Casos de uso prioritários
 
-Os contextos mais promissores para as primeiras validacoes sao:
+Os contextos mais promissores para as primeiras validações são:
 
 1. `Objetos de alto valor`
-Maior necessidade de prova, custodia e auditoria.
+Maior necessidade de prova, custódia e auditoria.
 
-2. `Operacoes cross-border`
+2. `Operações cross-border`
 Maior complexidade documental e multiator.
 
 3. `Cadeias multimodais`
-Maior risco de fragmentacao de rastreamento.
+Maior risco de fragmentação de rastreamento.
 
 4. `Seguros e sinistros`
 Maior valor da prova de integridade e responsabilidade.
 
-5. `Operacoes com muitos terceiros`
-Maior necessidade de interoperabilidade e governanca.
+5. `Operações com muitos terceiros`
+Maior necessidade de interoperabilidade e governança.
 
 ## 14. MVP proposto
 
-O MVP deve ser pequeno o suficiente para ser construido e forte o suficiente para demonstrar a tese.
+O MVP deve ser pequeno o suficiente para ser construído e forte o suficiente para demonstrar a tese.
 
-### 14.1 Capacidades minimas
+### 14.1 Capacidades mínimas
 
 - rede blockchain permissionada local;
-- criacao de remessas;
-- identificador fisico simples, como QR;
+- criação de remessas;
+- identificador físico simples, como QR;
 - registro de eventos principais;
-- transferencia de custodia;
-- anexacao de documentos com hash on-chain;
-- API basica;
+- transferência de custódia;
+- anexação de documentos com hash on-chain;
+- API básica;
 - painel administrativo;
 - OCR documental;
 - resumo de remessa por IA;
-- relatorio basico de auditoria.
+- relatório básico de auditoria.
 
-### 14.2 Eventos minimos
+### 14.2 Eventos mínimos
 
-- criacao;
+- criação;
 - coleta;
 - entrada em hub;
-- saida de hub;
-- transferencia de custodia;
+- saída de hub;
+- transferência de custódia;
 - entrega;
-- excecao.
+- exceção.
 
 ### 14.3 Objetivo do MVP
 
 Provar que a plataforma consegue unir:
 
 - rastreamento estruturado;
-- prova imutavel;
-- IA util no fluxo operacional;
+- prova imutável;
+- IA útil no fluxo operacional;
 - base para interoperabilidade futura.
 
-## 15. Roadmap de evolucao
+## 15. Roadmap de evolução
 
-### Fase 1 - Fundacao
+### Fase 1 - Fundação
 
-- dominio e modelo de dados;
+- domínio e modelo de dados;
 - ledger permissionado;
 - API inicial;
 - documentos hasheados;
 - painel inicial;
 - IA documental.
 
-### Fase 2 - Custodia e automacao
+### Fase 2 - Custódia e automação
 
-- custodia assinada;
-- smart contracts basicos;
+- custódia assinada;
+- smart contracts básicos;
 - copiloto operacional;
 - trilhas de auditoria;
-- analise de risco inicial.
+- análise de risco inicial.
 
 ### Fase 3 - Financeiro e compliance
 
-- split e conciliacao;
+- split e conciliação;
 - garantias;
-- modulos de disputa;
+- módulos de disputa;
 - compliance documental ampliado.
 
-### Fase 4 - Federacao
+### Fase 4 - Federação
 
-- protocolo entre instancias;
+- protocolo entre instâncias;
 - interoperabilidade padronizada;
 - roteamento entre empresas;
-- conciliacao entre redes.
+- conciliação entre redes.
 
 ### Fase 5 - Ecossistema aberto
 
 - SDKs maduros;
-- adaptadores comunitarios;
-- marketplace de integracoes;
-- governanca federada mais ampla;
-- possivel ancoragem publica opcional.
+- adaptadores comunitários;
+- marketplace de integrações;
+- governança federada mais ampla;
+- possível ancoragem pública opcional.
 
 ## 16. Open source e comunidade
 
-Este projeto nasce com vocacao aberta. Isso significa que a comunidade pode contribuir nao apenas com codigo, mas tambem com:
+Este projeto nasce com vocação aberta. Isso significa que a comunidade pode contribuir não apenas com código, mas também com:
 
-- revisao do protocolo;
-- validacao da modelagem de eventos;
-- critica de seguranca;
-- contribuicoes de SDK;
+- revisão do protocolo;
+- validação da modelagem de eventos;
+- crítica de segurança;
+- contribuições de SDK;
 - conectores para sistemas legados;
 - melhorias de IA;
-- revisao juridica e de privacidade;
-- exemplos de implantacao;
+- revisão jurídica e de privacidade;
+- exemplos de implantação;
 - casos de uso setoriais.
 
-### 16.1 Areas prioritarias para contribuicao
+### 16.1 Áreas prioritárias para contribuição
 
-1. especificacao de eventos logisticos;
-2. modelo de custodia e prova;
+1. especificação de eventos logísticos;
+2. modelo de custódia e prova;
 3. armazenamento documental e hashing;
-4. consenso e governanca permissionada;
-5. SDKs de integracao;
+4. consenso e governança permissionada;
+5. SDKs de integração;
 6. observabilidade e auditoria;
 7. fluxos de IA com guardrails.
 
-### 16.2 Filosofia de colaboracao
+### 16.2 Filosofia de colaboração
 
 O projeto deve buscar:
 
-- transparencia arquitetural;
+- transparência arquitetural;
 - interoperabilidade acima de lock-in;
-- padroes simples e extensivos;
-- contribuicoes revisaveis;
-- documentacao forte;
-- preocupacao real com seguranca e privacidade.
+- padrões simples e extensivos;
+- contribuições revisáveis;
+- documentação forte;
+- preocupação real com segurança e privacidade.
 
-## 17. Limitacoes e riscos
+## 17. Limitações e riscos
 
 Este white paper reconhece alguns riscos importantes:
 
 1. `Escopo excessivo`
-Blockchain, IA, integracao, governanca e compliance juntos podem inflar o projeto.
+Blockchain, IA, integração, governança e compliance juntos podem inflar o projeto.
 
-2. `Adoacao lenta`
-Empresas podem hesitar em adotar novas camadas de confianca sem casos comprovados.
+2. `Adoção lenta`
+Empresas podem hesitar em adotar novas camadas de confiança sem casos comprovados.
 
-3. `Risco de complexidade desnecessaria`
-Se a blockchain for usada em partes que nao exigem imutabilidade, o sistema pode ficar mais pesado do que deveria.
+3. `Risco de complexidade desnecessária`
+Se a blockchain for usada em partes que não exigem imutabilidade, o sistema pode ficar mais pesado do que deveria.
 
-4. `Risco de automacao mal governada`
-IA sem guardrails pode introduzir erro, vies ou exposicao de dados.
+4. `Risco de automação mal governada`
+IA sem guardrails pode introduzir erro, viés ou exposição de dados.
 
 5. `Desafio federado`
-A interoperabilidade entre instancias pode ser tecnicamente e institucionalmente mais dificil do que parece.
+A interoperabilidade entre instâncias pode ser tecnicamente e institucionalmente mais difícil do que parece.
 
-## 18. Conclusao
+## 18. Conclusão
 
-O `Postal Trust` propoe uma nova base para sistemas postais, de rastreamento e cadeia de custodia: uma base em que blockchain nao e discurso, mas mecanismo de prova; e em que IA nao e enfeite, mas ferramenta operacional nativa.
+O `Postal Trust` propõe uma nova base para sistemas postais, de rastreamento e cadeia de custódia: uma base em que blockchain não é discurso, mas mecanismo de prova; e em que IA não é enfeite, mas ferramenta operacional nativa.
 
 O projeto se posiciona entre dois extremos:
 
 - de um lado, sistemas centralizados com baixa interoperabilidade;
-- do outro, blockchains publicas genericas pouco aderentes a operacao empresarial.
+- do outro, blockchains públicas genéricas pouco aderentes à operação empresarial.
 
-A proposta e construir uma terceira via:
+A proposta é construir uma terceira via:
 
-> uma infraestrutura open source, permissionada, federada e AI-native para coordenacao logistica confiavel.
+> uma infraestrutura open source, permissionada, federada e AI-native para coordenação logística confiável.
 
-Se bem executado, o projeto pode servir como base para empresas, integradores, operadoras, pesquisadores e comunidade open source desenvolverem um novo padrao de rastreabilidade auditavel e interoperabilidade logistica.
+Se bem executado, o projeto pode servir como base para empresas, integradores, operadoras, pesquisadores e comunidade open source desenvolverem um novo padrão de rastreabilidade auditável e interoperabilidade logística.
 
-## 19. Proximos passos sugeridos
+## 19. Próximos passos sugeridos
 
 1. revisar este white paper com a comunidade;
 2. definir o nicho inicial do MVP;
-3. escolher a stack tecnica da blockchain permissionada;
-4. definir o modelo inicial de eventos e custodia;
-5. iniciar a estrutura do repositorio com documentacao, contratos de dados e prototipos;
-6. abrir issues para contribuicoes de arquitetura, seguranca, IA e protocolo.
+3. escolher a stack técnica da blockchain permissionada;
+4. definir o modelo inicial de eventos e custódia;
+5. iniciar a estrutura do repositório com documentação, contratos de dados e protótipos;
+6. abrir issues para contribuições de arquitetura, segurança, IA e protocolo.
